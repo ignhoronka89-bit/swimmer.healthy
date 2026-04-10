@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Плавание для здоровья | Проект</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #eef7ff;
+            color: #023b5e;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Шапка */
+        header {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subhead {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* секции */
+        section {
+            background: white;
+            border-radius: 28px;
+            margin: 2rem 0;
+            padding: 1.6rem 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: #0077b6;
+            border-left: 6px solid #00b4d8;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.7rem;
+        }
+
+        h3 {
+            margin: 1rem 0 0.5rem;
+            color: #023b5e;
+        }
+
+        .grid-2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 230px;
+            background: #f9fdff;
+            padding: 1rem;
+            border-radius: 24px;
+            border: 1px solid #caf0f8;
+        }
+
+        .benefit-list {
+            list-style: none;
+        }
+
+        .benefit-list li {
+            margin: 0.7rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .benefit-list li::before {
+            content: "🏊";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .stats {
+            background: #caf0f8;
+            border-radius: 28px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0077b6;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 0.8rem;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #023b5e;
+            transform: scale(1.02);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #2c6979;
+            border-top: 1px solid #b3e4f5;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 700px) {
+            section {
+                padding: 1.2rem;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🏊‍♂️ ПЛАВАНИЕ — ЗДОРОВЬЕ В ДВИЖЕНИИ</h1>
+            <div class="subhead">Индивидуальный проект · Популяризация плавания как вида спорта для здоровья</div>
+            <div class="subhead" style="font-size: 0.9rem; margin-top: 8px;">Автор: ученик 10 класса | Руководитель:
+                ________</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Актуальность -->
+        <section>
+            <h2>📌 Актуальность проекта</h2>
+            <p>Плавание — один из самых безопасных и эффективных видов физической активности. Однако, согласно опросу
+                среди школьников, <strong>только 20%</strong> регулярно посещают бассейн, а более 60% не знают, как
+                правильно организовать оздоровительные тренировки. <br><br>
+                Проект направлен на популяризацию плавания, повышение информированности и формирование привычки к
+                здоровому образу жизни через доступные рекомендации.</p>
+        </section>
+
+        <!-- Польза плавания -->
+        <section>
+            <h2>💪 Влияние на организм</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>❤️ Сердце и сосуды</h3>
+                    <p>Укрепляет сердечную мышцу, нормализует давление, улучшает кровообращение.</p>
+                </div>
+                <div class="card">
+                    <h3>🫁 Дыхание</h3>
+                    <p>Развивает лёгкие, увеличивает жизненную ёмкость, учит правильному ритму.</p>
+                </div>
+                <div class="card">
+                    <h3>🧘 Осанка и позвоночник</h3>
+                    <p>Снимает нагрузку с позвоночника, формирует мышечный корсет, помогает при сколиозе.</p>
+                </div>
+                <div class="card">
+                    <h3>😌 Психика</h3>
+                    <p>Снижает стресс, улучшает сон, повышает самооценку.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Результаты опроса -->
+        <section>
+            <h2>📊 Социологический опрос (N=25)</h2>
+            <div class="grid-2">
+                <div class="card stats">
+                    <p style="font-size: 2rem;">20%</p>
+                    <p>занимаются плаванием регулярно</p>
+                </div>
+                <div class="card stats">
+                    <p style="font-size: 2rem;">63%</p>
+                    <p>не имеют чёткого представления о пользе</p>
+                </div>
+                <div class="card stats">
+                    <p style="font-size: 2rem;">+44%</p>
+                    <p>рост интереса после акции</p>
+                </div>
+            </div>
+            <p style="margin-top: 0.8rem;">✅ После проведения акции количество желающих заниматься выросло с 20% до 64%.
+            </p>
+        </section>
+
+        <!-- Рекомендации (буклет) -->
+        <section>
+            <h2>📘 Рекомендации (буклет проекта)</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🗓️ Как часто?</h3>
+                    <p>Начинающим — 2 раза/неделю. Для здоровья — 3 раза/неделю по 45–60 мин.</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ Интенсивность</h3>
+                    <p>Средняя: После плавания чувствуется приятная усталость, а не изнеможение. Дышать ритмично, без
+                        одышки. Вы можете говорить короткими фразами, но не петь.</p>
+                </div>
+                <div class="card">
+                    <h3>🏊 Стили для подростков</h3>
+                    <p>Кроль (дыхание), брасс (ноги), на спине (осанка). Баттерфляй — факультативно.</p>
+                </div>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="#" class="btn" style="background: #00b4d8;">📄 Скачать буклет (PDF)</a>
+                <span style="margin-left: 1rem; font-size: 0.9rem;">* в проекте представлен печатный буклет</span>
+            </div>
+        </section>
+
+        <!-- Акция -->
+        <section>
+            <h2>🎯 Проведённая акция «Плавай на здоровье!»</h2>
+            <p>В школе была организована акция: информационный стенд, мини-лекция (10 мин), раздача буклетов.</p>
+            <ul class="benefit-list">
+                <li>Охват: 25 учащихся</li>
+                <li>После акции 12 человек записались на пробное занятие</li>
+                <li>90% назвали информацию полезной</li>
+            </ul>
+            <p><strong>Вывод:</strong> простая просветительская работа значительно повышает мотивацию к занятиям
+                плаванием.</p>
+        </section>
+
+        <!-- Вывод -->
+        <section>
+            <h2>🏁 Общий вывод по проекту</h2>
+            <p>Плавание — универсальный, доступный и безопасный вид спорта, который положительно влияет на все системы
+                организма. Недостаточная информированность является главным барьером. Разработанные в проекте буклет и
+                акция доказали эффективность популяризации. Рекомендуется проводить аналогичные мероприятия в школах не
+                реже 1 раза в год.</p>
+            <p style="margin-top: 1rem;"><strong>Цель достигнута</strong> — сформированы практические рекомендации и
+                повышен интерес к оздоровительному плаванию.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            Индивидуальный проект, 10 класс<br>
+            Тема: «Популяризация плавания как вида спорта для здоровья»<br>
+            © 2025 | Все материалы носят ознакомительно-просветительский характер
+        </div>
+    </footer>
+
+</body>
+
+</html>
